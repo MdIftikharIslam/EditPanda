@@ -1,0 +1,14 @@
+{
+    "builds":[
+        {
+            "src":"EditPanda/wsgi.py",
+            "use":"@vercel/python"
+        }
+    ],
+    "routes": [
+        {
+            "src":"/(.*)",
+            "dest": "EditPanda/wsgi.py"
+        }
+    ]
+}
